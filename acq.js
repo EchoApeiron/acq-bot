@@ -2,12 +2,12 @@
 const fs = require('fs');
 const config = require('./config.json');
 const Discord = require('discord.js');
-const { Z_FIXED } = require('zlib');
 
 // Define our constant variables 
 const bot = new Discord.Client();
 const token = config.Discord.Token; 
 const prefix = config.Discord.Prefix;
+exports.queuedPlayers = [];
 
 // This allows for us to do dynamic command creation
 bot.commands = new Discord.Collection();
