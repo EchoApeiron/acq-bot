@@ -11,9 +11,12 @@
     "url": "git+https://github.com/EchoApeiron/acq-bot.git"
   },
   "author": "Dion Pezzimenti",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/EchoApeiron/acq-bot/issues"
   },
-  "homepage": "https://github.com/EchoApeiron/acq-bot#readme"
+  "homepage": "https://github.com/EchoApeiron/acq-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  }
 }
