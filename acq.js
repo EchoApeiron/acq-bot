@@ -2,6 +2,7 @@
 const fs = require('fs');
 const config = require('./config.json');
 const Discord = require('discord.js');
+const { Z_FIXED } = require('zlib');
 
 // Define our constant variables 
 const bot = new Discord.Client();
@@ -31,7 +32,8 @@ bot.on('message', message => {
 	} catch (error) {
 		console.error(error);
 		message.reply('There was an error trying to execute that command!');
-	}
+    }
+
 });
 
 // Start Bot Activities 
