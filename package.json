@@ -1,0 +1,19 @@
+{
+  "name": "acq-bot",
+  "version": "1.0.0",
+  "description": "Bot created for queuing players in Animal Crossing, and send them the Dodo Code as they are queued.",
+  "main": "acq.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EchoApeiron/acq-bot.git"
+  },
+  "author": "Dion Pezzimenti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EchoApeiron/acq-bot/issues"
+  },
+  "homepage": "https://github.com/EchoApeiron/acq-bot#readme"
+}
