@@ -6,7 +6,7 @@ const Discord = require('discord.js');
 // Define our constant variables 
 const bot = new Discord.Client();
 const token = config.Discord.Token; 
-const prefix = config.Discord.Prefix;
+let prefix = config.Discord.Prefix;
 exports.queue = new Map();
 
 // This allows for us to do dynamic command creation
