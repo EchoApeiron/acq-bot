@@ -1,11 +1,12 @@
-const main = require('../acq')
+const main = require('../acq');
 
 module.exports = {
-    name: "check",
+    name: "checkqueue",
     description: "Check the current queue.",
     execute(message) {
-        let queue = main.queuedPlayers;
-
-        message.channel.send(`Current Queue:\n\n${queue}`);
+        if (main.queue.size == 0) {
+            return message.channel.send(`There are currently no members queued.`);
+        }
+        message.channel.send(`There are members queued... but still working on being able to print them.`);
     },
 };

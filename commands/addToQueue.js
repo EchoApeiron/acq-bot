@@ -1,16 +1,13 @@
-const main = require('../acq')
+let main = require('../acq');
 
 module.exports = {
-    name: "add",
+    name: "addtoqueue",
     description: "Adds a villager to the queue.",
+    args: false,
+    guildOnly: true,
     execute(message, args) {
-        if (!args.length) {
-            return message.channel.send('No villager specified!');
-        }
+        main.queue.set(message.author.id, message.author)
 
-        let queue = main.queuedPlayers;
-        queue.push(args[0]);
-
-        message.channel.send(`Added ${args[0]} to the queue\nCurrent Queue:\n\n${queue}`);
+        message.channel.send(`${message.author} has been added to the queue.`);
     },
 };
