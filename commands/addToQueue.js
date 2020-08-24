@@ -1,4 +1,5 @@
-let main = require('../acq');
+const main = require('../acq');
+const config = require('../config.json');
 
 module.exports = {
     name: "addtoqueue",
@@ -6,7 +7,7 @@ module.exports = {
     args: false,
     guildOnly: true,
     execute(message, args) {
-        if (main.queue.size > 25) {
+        if (main.queue.size > config.Queue.MaxQueueLength) {
             return message.channel.send(`Sorry ${message.author}, but the queue is currently full.\nPlease try queuing again later.`)
         }
 

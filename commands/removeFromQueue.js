@@ -1,4 +1,4 @@
-let main = require('../acq');
+const main = require('../acq');
 
 module.exports = {
     name: "removefromqueue",

@@ -1,4 +1,5 @@
 const main = require('../acq');
+const Discord = require('discord.js');
 
 module.exports = {
     name: "checkqueue",
@@ -20,17 +21,16 @@ module.exports = {
 
         for (let i=0;i<length;i++){
             for (let [key,value] of main.queue) {
-                queued += `User: ${value} => ID: ${key}`;
+                queued += `${i+1}: ${value} => ${key}`;
             }
         }
 
-        message.channel.send(`Current queue:\
-        ${queued}`);
-        /*
-        let user = main.queue.get(message.author.id)
+        let embed = new Discord.MessageEmbed()
+        .setColor('#FF2D00')
+        .addFields(
+            { name: 'Current Queue', value: queued },
+        )
 
-        console.log(user)
-        message.channel.send(`There are members queued... but still working on being able to print them.`);
-        */ 
+        message.channel.send(embed);
     },
 };
