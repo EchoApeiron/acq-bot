@@ -1,6 +1,5 @@
 const main = require('../acq');
 const config = require('../config.json');
-const Discord = require('discord.js');
 
 module.exports = {
     name: "senddodocode",
@@ -30,7 +29,6 @@ module.exports = {
                 message.author.send(`This is the code to visit the island: ${main.dodoCode}`);
             }
         }
-
         
         message.channel.send(`There are queued users, but command is still under development.`);
     },
