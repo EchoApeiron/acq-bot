@@ -4,6 +4,8 @@ const Discord = require('discord.js');
 module.exports = {
     name: "checkqueue",
     description: "Check the current queue.",
+    args: false,
+    guildOnly: true,
     execute(message) {
         let length = 0;
 

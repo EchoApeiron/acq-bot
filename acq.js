@@ -7,7 +7,9 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = config.Discord.Token; 
 let prefix = config.Discord.Prefix;
+// Global Variables Shared Between Classes/Files
 exports.queue = new Map();
+exports.dodoCode = '';
 
 // This allows for us to do dynamic command creation
 bot.commands = new Discord.Collection();
