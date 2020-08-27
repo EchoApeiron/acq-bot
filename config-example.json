@@ -1,0 +1,10 @@
+{
+    "Discord": {
+        "Token": "<TOKEN_GOES_HERE>",
+        "Prefix": "++"
+    },
+    "Queue": {
+        "MaxQueueLength": 25,
+        "MaxIslandVisitors": 7
+    }
+}
