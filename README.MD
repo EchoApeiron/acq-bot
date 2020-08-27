@@ -13,7 +13,7 @@ npm install fs
 1) Install pre-requisites 
     - Use above section for install pre-requisites if not done already
 1) Setup your config file 
-    - You can rename the example to config.js
+    - You can rename the example to config.json
     - Be sure to add your Discord Bot Token to the config or it wiil break
 1) Run the bot 
     - Ex. node acq.js 
